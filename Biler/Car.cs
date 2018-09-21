@@ -8,5 +8,21 @@ namespace Biler
 {
     class Car
     {
+        private String Brand;
+        private String Model;
+        private int Year;
+        private bool benzin;
+        private String color;
+        private String Licenseplate;
+
+
+        public double Drive()
+        {
+            return 1;
+        }
+
+        public void Gear()
+        {
+        }
     }
 }
