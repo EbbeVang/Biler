@@ -73,7 +73,14 @@ namespace Biler
 
         public override string ToString()
         {
-            return "hej";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("+-----------------------+");
+            sb.Append("| Brand:");
+            sb.Append("\t");
+            sb.Append(_brand);
+            sb.Append("\t|");
+            return sb.ToString();
+            
         }
     }
 
