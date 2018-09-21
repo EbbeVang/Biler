@@ -79,8 +79,7 @@ namespace Biler
             sb.Append("\t");
             sb.Append(_brand);
             sb.Append("\t|");
-            return sb.ToString();
-            
+            return sb.ToString();            
         }
     }
 
