@@ -10,6 +10,12 @@ namespace Biler
     {
         static void Main(string[] args)
         {
+            // lav et bil-objekt
+            Car citroenCar = new Car("Citröen", "Cactus", 2015);
+
+            Car audiCar = new Car("Audi", "R8", 2008, "Sort", "AB12345", true);
+
+            Console.WriteLine(audiCar);
         }
     }
 }
