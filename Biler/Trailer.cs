@@ -8,14 +8,15 @@ namespace Biler
 {
     class Trailer
     {
-        private String load;
+        private String load = "";
         private bool full;
 
         // denne metode tager det oprindelige load og tilføjer
         // et komma efterfulgt at hvad man bruger som load parameter
         public void fillTrailer(String load)
         {
-            this.load = load;
+            if (this.load != "") this.load = this.load + ", " + load;
+            else this.load = load;
         }
 
         public override string ToString()
