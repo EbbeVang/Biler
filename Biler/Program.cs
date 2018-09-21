@@ -16,6 +16,16 @@ namespace Biler
             Car audiCar = new Car("Audi", "R8", 2008, "Sort", "AB12345", true);
 
             Console.WriteLine(audiCar);
+
+            Console.WriteLine("Trailer Test:");
+            Trailer trailer = new Trailer();
+
+            trailer.fillTrailer("Hækkeaffald");
+            Console.WriteLine(trailer);
+           
+            trailer.fillTrailer("Gl. cykel");
+            Console.WriteLine(trailer);
+
         }
     }
 }
