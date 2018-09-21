@@ -12,19 +12,21 @@ namespace Biler
         {
             // lav et bil-objekt
             Car citroenCar = new Car("Citröen", "Cactus", 2015);
+            Console.WriteLine(citroenCar);
+            Trailer trailer = new Trailer();
+            citroenCar.attachTrailer(trailer);
+            Console.WriteLine(citroenCar);
+            trailer.fillTrailer("hækkeaffald");
+            trailer.fillTrailer("Gl. cykel");
+            Console.WriteLine(citroenCar);
+
 
             Car audiCar = new Car("Audi", "R8", 2008, "Sort", "AB12345", true);
 
+
             Console.WriteLine(audiCar);
 
-            Console.WriteLine("Trailer Test:");
-            Trailer trailer = new Trailer();
-
-            trailer.fillTrailer("Hækkeaffald");
-            Console.WriteLine(trailer);
            
-            trailer.fillTrailer("Gl. cykel");
-            Console.WriteLine(trailer);
 
         }
     }

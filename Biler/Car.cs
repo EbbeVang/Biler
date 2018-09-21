@@ -15,6 +15,8 @@ namespace Biler
         private String _color;
         private String _licenseplate;
 
+        private Trailer trailer;
+
         public Car(String brand, String model, int year, String color, String licenseplate, bool benzin) 
         : this(brand, model, year)
         {
@@ -61,6 +63,11 @@ namespace Biler
             get { return _benzin; }
         }
 
+        public void attachTrailer(Trailer trailer)
+        {
+            this.trailer = trailer;
+        }
+
 
         public double Drive()
         {
@@ -79,6 +86,7 @@ namespace Biler
             sb.Append("\t");
             sb.Append(_brand);
             sb.Append("\t|");
+            if (this.trailer != null) sb.Append(trailer.ToString());
             return sb.ToString();            
         }
     }
