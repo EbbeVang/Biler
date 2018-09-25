@@ -18,6 +18,9 @@ namespace Biler
             Console.WriteLine(citroenCar);
             trailer.fillTrailer("hækkeaffald");
             trailer.fillTrailer("Gl. cykel");
+            trailer.fillTrailer("Trampolin");
+            trailer.fillTrailer("gl ost");
+            trailer.fillTrailer("fravær");
             Console.WriteLine(citroenCar);
 
 
